@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\input{preamble}
+\input{macros}
+
+\graphicspath{{./images/}}
+
+\title{\huge{Measures of Location and Spread}}
+\author{\huge{Jack Maguire}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\qs{
+\qsp{a}{
+	\(2.75, 5.50\)
+}
+\qsp{b}{
+\begin{align*}
+	&= \frac{\sum MF}{\sum F} \\
+	&= \frac{(0.5*1) + (1.5*6) + (2.25*60) + (2.75*280) + (3.25*820) + (3.75*320) + (4.5*10) + (5.5*3)}{1+6+60+280+820+320+10+3} \\
+	&= \frac{4841}{1500} \\
+	&= 3.23 \text{ kg}
+\end{align*}
+}
+\qsp{d}{
+\begin{align*}
+	\text{Q2 } &= \frac{n}{2} = \frac{1500}{2} = 750 \\
+	\text{Q2 } &\to 3.0 + \frac{750 - 1 - 6 - 60 - 280}{820} * (3.5-3)
+	&= 3.0 + \frac{403}{820} * 0.5
+	&= 3.25 \text{ kg}
+\end{align*}
+}
+}
+
+\qs{
+\qsp{a}{
+\begin{multicols}{3}
+	\noindent
+	\textbf{Q1}
+	\begin{align*}
+		&= \frac{n+1}{4} = \frac{11+1}{4} = 3 \\
+		&\to 35
+	\end{align*}
+	
+	\columnbreak
+	\textbf{Q2/Median}
+	\begin{align*}
+		&= \frac{n+1}{2} = \frac{11+1}{2} = 6 \\
+		&\to 53
+	\end{align*}
+
+	\columnbreak
+	\textbf{Q3}
+	\begin{align*}
+		&= \frac{3(n+1)}{4} = \frac{33+3}{4} = 9 \\
+		&\to 60
+	\end{align*}
+\end{multicols}
+}
+\qsp{b}{
+	\[ \iqr = Q_3 - Q_1 = 25 \]
+\begin{multicols}{2}
+	\noindent
+	\textbf{Lower Bound}
+	\[ = Q_3 + 1.5 * \iqr = 60 + 1.5 * 25 = 97.5 \]
+	
+	\columnbreak
+	\textbf{Upper Bound}
+	\[ = Q_1 - 1.5 * \iqr = 35 - 1.5 * 25 = -2.5 \]
+\end{multicols}
+The only value that is outside these bounds is \(110\).
+}
+\qsp{c}{
+	\vspace{5cm}
+}
+}
+
+\qs{
+\qsp{a}{
+\begin{align*}
+	30\% &= \frac{30n}{100} = \frac{30*100}{100} = 30 \\
+	&\to 20.5 + \frac{0.5}{30}*(30.5-20.5) = 20.7
+\end{align*}
+}
+\qsp{b}{
+	\begin{align*}
+		70\% &= \frac{70n}{100} = \frac{70*100}{100} = 70 \\
+		&\to 30.5 + \frac{10}{24}*(40.5-30.5) = 34.7
+	\end{align*}
+}
+}
+
+
+\end{document}
