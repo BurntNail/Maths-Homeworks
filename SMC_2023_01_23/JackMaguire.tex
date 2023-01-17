@@ -1,0 +1,406 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\input{preamble}
+\input{macros}
+
+\graphicspath{{./images/}}
+
+\title{\huge{9I}}
+\author{\huge{Jack Maguire}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\part*{9I}
+
+\qs{	
+\begin{multicols}{2}
+	\noindent
+	\qsp{a}{
+		\begin{align*}
+			\differen &= 3x^2 - 6x + 1 \\
+			\twodifferen &= 6x - 6 
+		\end{align*}
+		\begin{multicols}{2}
+			\noindent
+			\textbf{Convex}
+			\begin{align*}
+				6x - 6 &< 0 \\
+				x &< 1
+			\end{align*}	
+			
+			\columnbreak
+			\textbf{Concave}
+			\begin{align*}
+				6x - 6 &> 0 \\
+				x &> 1
+			\end{align*}	
+		\end{multicols}
+	}
+	\qsp{b}{
+		\begin{align*}
+			\differen &= 4x^3 - 9x^2 + 2 \\
+			\twodifferen &= 12 x^2 - 18x
+		\end{align*}
+		\begin{multicols}{2}
+			\noindent
+			\textbf{Convex}
+			\begin{align*}
+				12x^2 - 18x &< 0 \\
+				2x^2 - 3x &< 0 \\
+				x(2x-3) &< 0 \\
+				0 < x &< \frac{3}{2}
+			\end{align*}	
+			
+			\columnbreak
+			\textbf{Concave}
+			\begin{align*}
+				12x^2 - 18x &> 0 \\
+				2x^2 - 3x &> 0 \\
+				x(2x-3) &> 0 \\
+				x < 0 \cup x &> \frac{3}{2}
+			\end{align*}	
+		\end{multicols}
+	}
+	\qsp{c}{
+		\begin{align*}
+			\differen &= \cos x \\
+			\twodifferen &= - \sin x
+		\end{align*}
+		\begin{multicols}{2}
+			\noindent
+			\textbf{Convex}
+			\begin{align*}
+				- \sin x &< 0 \\
+				0 < x &< \pi
+			\end{align*}	
+			
+			\columnbreak
+			\textbf{Concave}
+			\begin{align*}
+				- \sin x &> 0 \\
+				\pi < x &> 2\pi
+			\end{align*}	
+		\end{multicols}
+	}
+
+	\columnbreak
+	\qsp{d}{
+		\begin{align*}
+			\differen &= -2x + 3 \\
+			\twodifferen &= -2
+		\end{align*}
+		\begin{multicols}{2}
+			\noindent
+			\textbf{Convex}
+			\begin{align*}
+				-2 &< 0 \\
+				\text{Always Convex}
+			\end{align*}	
+			
+			\columnbreak
+			\textbf{Concave}
+			\begin{align*}
+				-2 &> 0 \\
+				\text{Never Concave}
+			\end{align*}	
+		\end{multicols}
+	}
+	\qsp{e}{
+		\begin{align*}
+			\differen &= e^x - 2x \\
+			\twodifferen &= e^x - 2
+		\end{align*}
+		\begin{multicols}{2}
+			\noindent
+			\textbf{Convex}
+			\begin{align*}
+				e^x - 2 &< 0 \\
+				e^x &< 2 \\
+				x &< \ln 2
+			\end{align*}	
+			
+			\columnbreak
+			\textbf{Concave}
+			\begin{align*}
+				e^x - 2 &> 0 \\
+				e^x &> 2 \\
+				x &> \ln 2
+			\end{align*}	
+		\end{multicols}
+	}
+	\qsp{f}{
+		\begin{align*}
+			\differen &= \frac{1}{x} \\
+			\twodifferen &= \frac{-1}{x^2}
+		\end{align*}
+		\begin{multicols}{2}
+			\noindent
+			\textbf{Convex}
+			\begin{align*}
+				\frac{-1}{x^2} &< 0 \\
+				-1 &< 0 \\
+				\text{Always Convex}
+			\end{align*}	
+			
+			\columnbreak
+			\textbf{Concave}
+			\begin{align*}
+				\frac{-1}{x^2} &> 0 \\
+				-1 &> 0 \\
+				\text{Never Convex}
+			\end{align*}	
+		\end{multicols}
+	}	
+\end{multicols}
+}
+
+\qs{
+\qsp{a}{
+\[ \sin^2 y + \cos^2 y = 1 \quad \therefore \quad \cos y = \sqrt{1 - \sin^2 y} \]
+\[ y = \arcsin x \quad \therefore \quad x = \sin y \]
+\begin{align*}
+	1 &= \cos y \differen \\
+	\differen &= \frac{1}{\cos y} \\ 
+	&= \frac{1}{\sqrt{1 - \sin^2 y}} \\
+	&= \frac{1}{\sqrt{1 - x^2}}
+\end{align*}
+}
+\qsp{b}{
+\begin{align*}
+	\differen &= \left( 1 - x^2 \right)^{-\frac{1}{2}} \\
+	\twodifferen &= - \frac{1}{2} \left( 1-x^2 \right)^{-\frac{3}{2}} (-2x) \\
+	&= \frac{x}{2 \sqrt{1-x^2}^3}
+\end{align*}
+
+\lineyboi
+
+\[ 	\frac{x}{2 \sqrt{1-x^2}^3} > 0 \]
+\begin{multicols}{2}
+	\noindent
+	\[ x > 0 \]
+	\columnbreak
+	\begin{align*}
+		2 \sqrt{1-x^2}^3 &> 0 \\
+		1 - x^2 &> 0 \\
+		x^2 &< 1 \\
+		-1 < x &< 1
+	\end{align*}
+\end{multicols}
+\[ 0 < x < 1 \]
+}
+\qsp{d}{
+\begin{align*}
+	x &= 0 \\
+	y &= \arcsin x = \arcsin 0 \\
+	&= 0
+\end{align*}
+\[ = (0, 0) \]
+}
+}
+
+
+\qs{
+\qsp{a}{
+\begin{align*}
+	\differen &= -2 \cos x \sin x - 2 \cos x \\
+	\twodifferen &= -2 \left( - \sin^2 x + \cos^2 x \right) + 2 \sin x \\
+	&= -2 \left( \cos^2 x - \sin^2 x \right) + 2 \sin x \\
+\end{align*}
+\lineyboi
+\begin{align*}
+	0 &= -2 \left( \cos^2 x - \sin^2 x \right) + 2 \sin x \\
+	0 &= \cos^2 x - \sin^2x  - \sin x \\
+	0 &= 1 - \sin^2x - \sin^2x - \sin x \\
+	0 &= 2 \sin^2x + \sin x - 1 \\
+	0 &= \left( \sin x + 1 \right) \left( 2 \sin x - 1 \right) \\
+	\sin x &= -1, \frac{1}{2} \\
+	x &= \frac{3}{2}\pi, \frac{1}{6} \pi, \frac{5}{6} \pi
+\end{align*}
+\lineyboi
+\begin{itemize}
+	\ii \( (\frac{3}{2}\pi, 2) \)
+	\ii \( (\frac{1}{6}\pi, -\frac{1}{4}) \)
+	\ii \( (\frac{5}{6}\pi, -\frac{1}{4}) \)
+\end{itemize}
+}
+\qsp{b}{
+\begin{align*}
+	\differen &= -\frac{\left( 3x^2 - 4x + 1 \right) \left( x - 2 \right) - \left( x^3 - 2x^2 + x - 1 \right) }{\left( x - 2 \right)^2} \\
+	&= -\frac{3x^3 -6x^2 -4x^2 +8x +x -2 -x^3 +2x^2 -x +1}{\left( x - 2 \right)^2} \\
+	&= \frac{-2x^3 +8x^2 -8x +1}{x^2 - 4x + 4} \\
+	&= \frac{-2x^3 +8x^2 -8x}{x^2 - 4x + 4} + \frac{1}{x^2 - 4x + 4} \\
+	&= \frac{-2x(x^2 - 4x + 4)}{x^2 + 4x + 4} + \frac{1}{x^2 - 4x + 4} \\
+	&= -2x + \frac{1}{x^2 - 4x + 4} \\
+	\twodifferen &= -2 -\left(x^2 - 4x + 4\right)^{-2}(2x-4) \\
+	&= \frac{4-2x}{(x-2)^4} - 2 \\
+\end{align*}
+\lineyboi
+\begin{align*}
+	\frac{4-2x}{(x-2)^4} - 2 &= 0 \\
+	\frac{4-2x}{(x-2)^4} &= 2 \\
+	2-x &= (x-2)^4 \\
+	-(x-2) &= (x-2)^4 \\
+	-1 &= (x-2)^3 \\
+	x-2 &= -1 \\
+	x &= 1 \\
+\end{align*}
+\lineyboi
+\[ = (1, 1) \]
+}
+\qsp{c}{
+\begin{align*}
+	\differen &= \frac{2x^2\left( x^2 - 4 \right) - x^3 \left( 2x \right)}{\left(x^2 - 4\right)^2} \\
+	&= \frac{3x^4 - 8x^2 - 2x^4}{\left(x^2 - 4\right)^2} \\
+	&= \frac{x^4-12x^2}{\left(x^2 - 4\right)^2} \\
+	\twodifferen &= \frac{\left( 4x^3 - 24x \right)\left( x^2-4 \right)^2 - 2\left( x^4 - 12x^2 \right)\left( x^2 - 4 \right) (2x)}{\left(x^2 - 4\right)^4} \\
+	&= \frac{\left( 4x^3 - 24x \right)\left( x^2-4 \right) - 4x\left( x^4 - 12x^2 \right)}{\left(x^2 - 4\right)^3} \\
+	&= \frac{4x^5 - 16x^3 - 24x^3 + 96x - 4x^5 + 48x^3}{\left(x^2 - 4\right)^3} \\
+	&= \frac{8x^3 + 96x}{\left(x^2 - 4\right)^3} \\
+	&= \frac{8x\left( x^2 + 12 \right)}{\left(x^2 - 4\right)^3} \\
+\end{align*}
+\lineyboi
+\begin{align*}
+	0 = \frac{8x\left( x^2 + 12 \right)}{\left(x^2 - 4\right)^3}
+	0 &= 8x\left( x^2 + 12 \right) \\
+	x &= 0 \\ \\
+	0 &= x^2 + 12 \\
+	& \text{Discard}
+\end{align*}
+}
+\lineyboi
+\[ = (0, 0) \]
+}
+
+
+\qs{
+\begin{align*}
+	\differen &= \frac{2x^2}{x} + 4x \ln x \\
+	&= 2x + 4x \ln x \\
+	&= 2x \left( 1 + 2\ln x \right) \\
+	\twodifferen &= 2\left( 1 + 2\ln x \right) + 2x \frac{2}{x} \\
+	&= 2 + 4 \ln x + 4 \\
+	&= 6 + 4 \ln x \\
+\end{align*}
+\lineyboi
+\begin{align*}
+	0 &= 6 + 4 \ln x \\
+	-\frac{3}{2} &= \ln x \\
+	x &= e^{-\frac{3}{2}} \\
+	x & 0.223
+\end{align*}
+\[ = (0.223, -0.149) \]
+}
+
+\qs{
+\qsp{a}{
+\begin{align*}
+	\differen &= e^x \left( x^2 - 2x + 2 \right) + e^x \left( 2x - 2 \right)
+	&= e^x x^2
+\end{align*}
+\lineyboi
+\[ 	0 = e^x x^2 \]
+\begin{multicols}{2}
+	\noindent
+	\begin{align*}
+		0 &= e^x \\
+		x &= \ln 0 \\
+		& \text{Discard}
+	\end{align*}
+
+	\columnbreak
+	\begin{align*}
+		0 &= x^2 \\
+		x &= 0
+	\end{align*}
+\end{multicols}
+\lineyboi
+\[ = (0, 2) \]
+\begin{tabular}{r|l}
+	\( f^\prime(-0.1) \) & \( 0.09 \) \\
+	\( f^\prime(0.1) \) & \( 0.011 \) \\
+\end{tabular}
+Point of Inflection?
+}
+
+\qsp{b}{
+\[ \twodifferen = e^x \left( x^2 + 2x \right) = e^xx(x+2) \]
+\begin{multicols}{3}
+	\noindent
+	\begin{align*}
+		0 &= e^x \\
+		x &= \ln 0 \\
+		& \text{Discard}
+	\end{align*}
+
+	\columnbreak
+	\[ x = 0 \]
+	
+	\columnbreak
+	\begin{align*}
+		0 &= x + 2 \\
+		x &= -2 \\
+	\end{align*}
+\end{multicols}
+Since \( x = 0 \) is a stationary point, I only need \( x = 2 \).
+\[ = (2, 2e^2)\]
+}
+}
+
+\qs{
+\qsp{a}{
+\[ \differen = e^x(x+1) \]
+\lineyboi
+\[ 0 = e^x(x+1) \]
+\begin{multicols}{2}
+	\noindent
+	\begin{align*}
+		0 &= e^x \\
+		x &= \ln 0 \\
+		& \text{Discard}
+	\end{align*}
+
+	\columnbreak
+	\begin{align*}
+		0 &= x + 1\\
+		x &= -1 \\
+	\end{align*}
+\end{multicols}
+\lineyboi
+\[ = (-1, \frac{-1}{e}) \]
+\begin{tabular}{r|l}
+	\( f^\prime(-0.1) \) & \( -0.09 \) \\
+	\( f^\prime(0.1) \) & \( 0.11 \) \\
+\end{tabular}
+Minimum Point
+}
+\qsp{b}{
+\[ \twodifferen = e^x \left( x+1 + 1 \right) =  e^x(x+2) \]
+\lineyboi
+\[ 0 = e^x (x+2) \]
+\begin{multicols}{2}
+	\noindent
+	\begin{align*}
+		0 &= e^x \\
+		x &= \ln 0 \\
+		& \text{Discard}
+	\end{align*}
+	
+	\columnbreak
+	\begin{align*}
+		0 &= x + 2\\
+		x &= -2 \\
+	\end{align*}
+\end{multicols}
+\lineyboi
+\[ = (-2, \frac{-2}{e^2})) \]
+}
+\qsp{c}{
+\vspace{5cm}
+}
+}
+
+\end{document}
