@@ -11,151 +11,161 @@
 \author{\huge{Jack Maguire}}
 \date{}
 
+% This really annoys me:
+% This is what all of the qs ask me to do
+
+% 1 - find 2d and check for ranges x6
+% 2 - find 2d and check for ranges
+% 3 - find 2d and solve
+% 4 - find 2d and solve
+% 5 - find d and solve; find 2d and solve
+% 6 - find d and solve; find 2d and solve
+% 7 - read a graph
+% 8 - find 2d and solve
+% 9 - find 2d and solve
+
 \begin{document}
 \maketitle
 
-\part*{9I}
-
 \qs{	
-\begin{multicols}{2}
-	\noindent
-	\qsp{a}{
-		\begin{align*}
-			\differen &= 3x^2 - 6x + 1 \\
-			\twodifferen &= 6x - 6 
-		\end{align*}
-		\begin{multicols}{2}
-			\noindent
-			\textbf{Convex}
+	\begin{multicols}{2}
+		\noindent
+		\qsp{a}{
 			\begin{align*}
-				6x - 6 &< 0 \\
-				x &< 1
-			\end{align*}	
-			
-			\columnbreak
-			\textbf{Concave}
+				\differen &= 3x^2 - 6x + 1 \\
+				\twodifferen &= 6x - 6 
+			\end{align*}
+			\begin{multicols}{2}
+				\noindent
+				\textbf{Concave}
+				\begin{align*}
+					6x - 6 &< 0 \\
+					x &< 1
+				\end{align*}	
+				\columnbreak
+				
+				\textbf{Convex}
+				\begin{align*}
+					6x - 6 &> 0 \\
+					x &> 1
+				\end{align*}	
+			\end{multicols}
+		}
+		\qsp{b}{
 			\begin{align*}
-				6x - 6 &> 0 \\
-				x &> 1
-			\end{align*}	
-		\end{multicols}
-	}
-	\qsp{b}{
-		\begin{align*}
-			\differen &= 4x^3 - 9x^2 + 2 \\
-			\twodifferen &= 12 x^2 - 18x
-		\end{align*}
-		\begin{multicols}{2}
-			\noindent
-			\textbf{Convex}
+				\differen &= 4x^3 - 9x^2 + 2 \\
+				\twodifferen &= 12 x^2 - 18x
+			\end{align*}
+			\begin{multicols}{2}
+				\noindent
+				\textbf{Concave}
+				\begin{align*}
+					12x^2 - 18x &< 0 \\
+					2x^2 - 3x &< 0 \\
+					x(2x-3) &< 0 \\
+					0 < x &< \frac{3}{2}
+				\end{align*}	
+				\columnbreak
+				
+				\textbf{Convex}
+				\begin{align*}
+					12x^2 - 18x &> 0 \\
+					2x^2 - 3x &> 0 \\
+					x(2x-3) &> 0 \\
+					x < 0 \cup x &> \frac{3}{2}
+				\end{align*}	
+			\end{multicols}
+		}
+		\qsp{c}{
 			\begin{align*}
-				12x^2 - 18x &< 0 \\
-				2x^2 - 3x &< 0 \\
-				x(2x-3) &< 0 \\
-				0 < x &< \frac{3}{2}
-			\end{align*}	
-			
-			\columnbreak
-			\textbf{Concave}
+				\differen &= \cos x \\
+				\twodifferen &= - \sin x
+			\end{align*}
+			\begin{multicols}{2}
+				\noindent
+				\textbf{Concave}
+				\begin{align*}
+					- \sin x &< 0 \\
+					0 < x &< \pi
+				\end{align*}	
+				\columnbreak
+				
+				\textbf{Convex}
+				\begin{align*}
+					- \sin x &> 0 \\
+					\pi < x &> 2\pi
+				\end{align*}	
+			\end{multicols}
+		}
+		\columnbreak
+		\qsp{d}{
 			\begin{align*}
-				12x^2 - 18x &> 0 \\
-				2x^2 - 3x &> 0 \\
-				x(2x-3) &> 0 \\
-				x < 0 \cup x &> \frac{3}{2}
-			\end{align*}	
-		\end{multicols}
-	}
-	\qsp{c}{
-		\begin{align*}
-			\differen &= \cos x \\
-			\twodifferen &= - \sin x
-		\end{align*}
-		\begin{multicols}{2}
-			\noindent
-			\textbf{Convex}
+				\differen &= -2x + 3 \\
+				\twodifferen &= -2
+			\end{align*}
+			\begin{multicols}{2}
+				\noindent
+				\textbf{Concave}
+				\begin{align*}
+					-2 &< 0 \\
+					\text{Always Concave}
+				\end{align*}	
+				\columnbreak
+				
+				\textbf{Convex}
+				\begin{align*}
+					-2 &> 0 \\
+					\text{Never Convex}
+				\end{align*}	
+			\end{multicols}
+		}
+		\qsp{e}{
 			\begin{align*}
-				- \sin x &< 0 \\
-				0 < x &< \pi
-			\end{align*}	
-			
-			\columnbreak
-			\textbf{Concave}
+				\differen &= e^x - 2x \\
+				\twodifferen &= e^x - 2
+			\end{align*}
+			\begin{multicols}{2}
+				\noindent
+				\textbf{Concave}
+				\begin{align*}
+					e^x - 2 &< 0 \\
+					e^x &< 2 \\
+					x &< \ln 2
+				\end{align*}	
+				\columnbreak
+				
+				\textbf{Convex}
+				\begin{align*}
+					e^x - 2 &> 0 \\
+					e^x &> 2 \\
+					x &> \ln 2
+				\end{align*}	
+			\end{multicols}
+		}
+		\qsp{f}{
 			\begin{align*}
-				- \sin x &> 0 \\
-				\pi < x &> 2\pi
-			\end{align*}	
-		\end{multicols}
-	}
-
-	\columnbreak
-	\qsp{d}{
-		\begin{align*}
-			\differen &= -2x + 3 \\
-			\twodifferen &= -2
-		\end{align*}
-		\begin{multicols}{2}
-			\noindent
-			\textbf{Convex}
-			\begin{align*}
-				-2 &< 0 \\
-				\text{Always Convex}
-			\end{align*}	
-			
-			\columnbreak
-			\textbf{Concave}
-			\begin{align*}
-				-2 &> 0 \\
-				\text{Never Concave}
-			\end{align*}	
-		\end{multicols}
-	}
-	\qsp{e}{
-		\begin{align*}
-			\differen &= e^x - 2x \\
-			\twodifferen &= e^x - 2
-		\end{align*}
-		\begin{multicols}{2}
-			\noindent
-			\textbf{Convex}
-			\begin{align*}
-				e^x - 2 &< 0 \\
-				e^x &< 2 \\
-				x &< \ln 2
-			\end{align*}	
-			
-			\columnbreak
-			\textbf{Concave}
-			\begin{align*}
-				e^x - 2 &> 0 \\
-				e^x &> 2 \\
-				x &> \ln 2
-			\end{align*}	
-		\end{multicols}
-	}
-	\qsp{f}{
-		\begin{align*}
-			\differen &= \frac{1}{x} \\
-			\twodifferen &= \frac{-1}{x^2}
-		\end{align*}
-		\begin{multicols}{2}
-			\noindent
-			\textbf{Convex}
-			\begin{align*}
-				\frac{-1}{x^2} &< 0 \\
-				-1 &< 0 \\
-				\text{Always Convex}
-			\end{align*}	
-			
-			\columnbreak
-			\textbf{Concave}
-			\begin{align*}
-				\frac{-1}{x^2} &> 0 \\
-				-1 &> 0 \\
-				\text{Never Convex}
-			\end{align*}	
-		\end{multicols}
-	}	
-\end{multicols}
+				\differen &= \frac{1}{x} \\
+				\twodifferen &= \frac{-1}{x^2}
+			\end{align*}
+			\begin{multicols}{2}
+				\noindent
+				\textbf{Concave}
+				\begin{align*}
+					\frac{-1}{x^2} &< 0 \\
+					-1 &< 0 \\
+					\text{Always Concave}
+				\end{align*}	
+				\columnbreak
+				
+				\textbf{Convex}
+				\begin{align*}
+					\frac{-1}{x^2} &> 0 \\
+					-1 &> 0 \\
+					\text{Never Concave}
+				\end{align*}	
+			\end{multicols}
+		}	
+	\end{multicols}
 }
 
 \qs{
@@ -178,19 +188,18 @@
 
 \lineyboi
 
-\[ 	\frac{x}{2 \sqrt{1-x^2}^3} > 0 \]
-\begin{multicols}{2}
-	\noindent
-	\[ x > 0 \]
-	\columnbreak
-	\begin{align*}
-		2 \sqrt{1-x^2}^3 &> 0 \\
-		1 - x^2 &> 0 \\
-		x^2 &< 1 \\
-		-1 < x &< 1
-	\end{align*}
-\end{multicols}
-\[ 0 < x < 1 \]
+\begin{align*}
+	\frac{x}{2 \sqrt{1-x^2}^3} &< 0 \\
+	x &< 0 \\
+	-1 < x &< 0
+\end{align*}
+}
+\qsp{c}{
+\begin{align*}
+	\frac{x}{2 \sqrt{1-x^2}^3} &> 0 \\
+	x &> 0 \\
+	0 < x &< 1
+\end{align*}
 }
 \qsp{d}{
 \begin{align*}
@@ -310,7 +319,6 @@
 		x &= \ln 0 \\
 		& \text{Discard}
 	\end{align*}
-
 	\columnbreak
 	\begin{align*}
 		0 &= x^2 \\
@@ -335,10 +343,8 @@ Point of Inflection?
 		x &= \ln 0 \\
 		& \text{Discard}
 	\end{align*}
-
 	\columnbreak
 	\[ x = 0 \]
-	
 	\columnbreak
 	\begin{align*}
 		0 &= x + 2 \\
@@ -351,55 +357,116 @@ Since \( x = 0 \) is a stationary point, I only need \( x = 2 \).
 }
 
 \qs{
-\qsp{a}{
-\[ \differen = e^x(x+1) \]
-\lineyboi
-\[ 0 = e^x(x+1) \]
 \begin{multicols}{2}
 	\noindent
-	\begin{align*}
-		0 &= e^x \\
-		x &= \ln 0 \\
-		& \text{Discard}
-	\end{align*}
+	\qsp{a}{
+		\[ \differen = e^x(x+1) \]
+		\lineyboi
+		\[ 0 = e^x(x+1) \]
+		\begin{multicols}{2}
+			\noindent
+			\begin{align*}
+				0 &= e^x \\
+				x &= \ln 0 \\
+				& \text{Discard}
+			\end{align*}
+			\columnbreak
+			\begin{align*}
+				0 &= x + 1\\
+				x &= -1 \\
+			\end{align*}
+		\end{multicols}
+		\lineyboi
+		\hfill
+		\[ = (-1, \frac{-1}{e}) \]
+		\begin{tabular}{r|l}
+			\( f^\prime(-0.1) \) & \( -0.09 \) \\
+			\( f^\prime(0.1) \) & \( 0.11 \) \\
+		\end{tabular}
+		Minimum Point
+	}
 
 	\columnbreak
-	\begin{align*}
-		0 &= x + 1\\
-		x &= -1 \\
-	\end{align*}
+	\qsp{b}{
+		\[ \twodifferen = e^x \left( x+1 + 1 \right) =  e^x(x+2) \]
+		\lineyboi
+		\[ 0 = e^x (x+2) \]
+		\begin{multicols}{2}
+			\noindent
+			\begin{align*}
+				0 &= e^x \\
+				x &= \ln 0 \\
+				& \text{Discard}
+			\end{align*}	
+			\columnbreak
+			\begin{align*}
+				0 &= x + 2\\
+				x &= -2 \\
+			\end{align*}
+		\end{multicols}
+		\lineyboi
+		\hfill
+		\[ = (-2, \frac{-2}{e^2})) \]
+	}
 \end{multicols}
-\lineyboi
-\[ = (-1, \frac{-1}{e}) \]
-\begin{tabular}{r|l}
-	\( f^\prime(-0.1) \) & \( -0.09 \) \\
-	\( f^\prime(0.1) \) & \( 0.11 \) \\
+\qsp{c}{
+\vspace{5cm}
+}
+}
+
+\qs{
+\begin{tabular}{r|cc}
+	& \( f^\prime \) & \( f^{\prime\prime} \) \\
+	\hline
+	A & Negative & Positive \\
+	B & Zero & Positive \\
+	C & Positive & Negative \\
+	D & Zero & Negative
 \end{tabular}
-Minimum Point
+}
+
+\qs{
+\begin{align*}
+	\differen &= \sec^2 x \\
+	\twodifferen &= 2 \tan x \sec^2 x
+\end{align*}
+\lineyboi
+\begin{align*}
+	0 &= 2 \tan x \sec^2 x \\
+	0 &= \frac{2 \sin x}{\cos^3 x} \\
+	0 &= 2 \sin x
+	x &= \arcsin 0 \\
+	x &= 0 
+\end{align*}
+\[ = (0, 0) \]
+}
+
+\qs{
+\qsp{a}{
+\begin{align*}
+	\differen &= 15x(3x - 1)^4 + (3x-1)^5
+	\twodifferen &= 180x^2 (3x-1)^3 + 15(3x-1)^4 + 15(3x-1)^4 \\
+	&= (3x-1)^3 \left( 180x + 30(3x-1)  \right) \\
+	&= (3x-1)^3(270x - 30)
+\end{align*}
 }
 \qsp{b}{
-\[ \twodifferen = e^x \left( x+1 + 1 \right) =  e^x(x+2) \]
-\lineyboi
-\[ 0 = e^x (x+2) \]
+\[ (3x-1)^3(270x - 30) \]
 \begin{multicols}{2}
 	\noindent
 	\begin{align*}
-		0 &= e^x \\
-		x &= \ln 0 \\
-		& \text{Discard}
+		0 &= (3x-1)^3 \\
+		0 &= 3x - 1 \\
+		x &= \frac{1}{3}
 	\end{align*}
-	
 	\columnbreak
 	\begin{align*}
-		0 &= x + 2\\
-		x &= -2 \\
+		0 &= 270x - 30 \\
+		30 &= 270x \\
+		x &= \frac{1}{9}
 	\end{align*}
 \end{multicols}
-\lineyboi
-\[ = (-2, \frac{-2}{e^2})) \]
-}
-\qsp{c}{
-\vspace{5cm}
+\[ = \left( \frac{1}{3}, 0 \right), \left( \frac{1}{9}, -\frac{32}{2187} \right) \]
 }
 }
 
