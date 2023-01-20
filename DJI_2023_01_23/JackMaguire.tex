@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\input{preamble}
+\input{macros}
+
+\graphicspath{{./images/}}
+
+\title{\huge{Standard Deviation}}
+\author{\huge{Jack Maguire}}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\qsn{5}{
+\begin{align*}
+	\overline{x} &= \frac{(1 * 89600) + (2 * 92500) + (3 * 45000) + (4 * 37100) + (5.5 * 19400)}{89600 + 92500 + 45000 + 37100 + 19400} = 2.34 \\
+	\sigma_x &= \sqrt{\frac{(1^2 * 89600) + (2^2 * 92500) + (3^2 * 45000) + (4^2 * 37100) + (5.5^2 * 19400)}{89600 + 92500 + 45000 + 37100 + 19400} - 2.34^2}  = 1.31
+\end{align*}
+}
+
+\qsn{13}{
+\qsp{a}{
+	\[ 44.999 \]
+}
+\qsp{b}{
+	\begin{align*}
+			\overline{x} &= \frac{(8 * 21707) + (20.5 * 22921) + (35 * 40894) + (55 * 27645) + (85 * 19345)}{132512} = 39.5 \\
+			\sigma_x &= \sqrt{\frac{(8^2 * 21707) + (20.5^2 * 22921) + (35^2 * 40894) + (55^2 * 27645) + (85^2 * 19345)}{132512} - 39.5^2} = 24.2
+	\end{align*}
+}
+}
+
+\qsn{17}{
+\qsp{i}{
+\begin{align*}
+	5.8 &= \sqrt{\frac{\sum w^2}{75} - 52.3^2} \\
+	\sum w^2 &= 75 * \left( 5.8^2 + 52.3^2 \right) = 207669.75\\
+	&= 208,000
+\end{align*}
+}
+\qsp{ii}{
+\begin{align*}
+	\overline{s} &= \frac{(52.3 * 75) + 5760}{100 + 75} = 65.6 \\
+	\sigma_s &= \sqrt{\frac{207669.75 + 335497}{175} - 65.6^2} = 34.6 i ???
+\end{align*}
+}
+}
+
+\qsn{4}{
+\qsp{i}{
+\begin{align*}
+	\overline{m} &= 0.74 + 5 = 5.74 \\
+	\sigma_m &= 0.13
+\end{align*}
+}
+\qsp{ii}{
+\[ \overline{m} = \frac{(5.74 * 10) + (5.6 * 15)}{25} = 5.66 \]
+}
+\qsp{iii}{
+	The second group guessed closer even though they were more spread out (higher \(\sigma_m\) ), which means that this claim is false - likely confusing accuracy and precision. 
+}
+}
+
+\end{document}
