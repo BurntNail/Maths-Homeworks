@@ -7,9 +7,16 @@
 
 \graphicspath{{./images/}}
 
-\title{\huge{Standard Deviation}}
+\title{\huge{Vectors Exam Qs}}
 \author{\huge{Jack Maguire}}
 \date{}
+
+\newcommand{\easymat}[1]{\begin{pmatrix}
+		{#1}
+\end{pmatrix}}
+\newcommand{\coord}[2]{\begin{pmatrix}
+		{#1} \\ {#2}
+\end{pmatrix}}
 
 
 \begin{document}
@@ -17,15 +24,51 @@
 
 \qs{
 \qsp{i}{
-\begin{align*}
-	p(2i + 6j) + q(2i - 4j) &= 6i - 7j \\
-	2pi + 6pj + 2qi - 4qj &= 6i - 7j \\
-\end{align*}
-\[ 2p + 2q = 6 \qquad  6p - 4q = -7 \]
-\[ 4p + 4q = 12 \qquad 6p - 4p = -7 \]
-\begin{align*}	
-\end{align*}
+	\begin{align*}
+		p(2i + 6j) + q(2i - 4j) &= 6i - 7j \\
+		2pi + 6pj + 2qi - 4qj &= 6i - 7j \\
+	\end{align*}
+	\[ 2p + 2q = 6 \qquad  6p - 4q = -7 \]
+	\[ 4p + 4q = 12 \qquad 6p - 4q = -7 \]
+	\begin{align*}
+		10p &= 5 \\
+		p &= \frac{1}{2} \\
+		2p + 2q &= 6 \\
+		1 + 2q &= 6 \\
+		2q &= 5 \\
+		q &= \frac{5}{2}
+	\end{align*}
 
+	\[ p = \frac{1}{2} \quad q = \frac{5}{2} \]
+}
+\qsp{ii}{
+	??? Will use algebra.
+	\begin{align*}
+		\left( 2 + 2k \right)^2 + \left( 6 - 4k \right)^2 &= 25 \\
+		4 + 8k + 4k^2 + 36 - 48k + 16k^2 &= 25 \\
+		20k^2 -40k + 15 &= 0 \\
+		4k^2 - 8k + 3 &= 0 \\
+	\end{align*}
+	\[ k = \frac{1}{2}, \frac{3}{2} \]
+}
+}
+
+\qs{
+\qsp{i}{
+	\begin{align*}
+		6i + 3j - 5i - 2j &= ai + bj + 2i - j \\
+		-i + 2j &= ai + bj \\ \\
+		D &= \coord{-1}{2}
+	\end{align*}
+}
+\qsp{ii}{
+	\begin{align*}
+		M &= \frac{\coord{2}{5} + \coord{6}{3}}{2} \\
+		&= \coord{4}{4} \\
+		AM &= \coord{4}{4} - \coord{-2}{1} \\
+		&= \coord{6}{3} \\
+		|AM| &= \sqrt{6^2 + 3^2} = 6.71 
+	\end{align*}
 }
 }
 
@@ -40,18 +83,57 @@
 	}
 }
 \qsp{ii}{
-\( C \) points form a circle around \(A\), radius 2. You need to find the unit vector of \(A\), then scale it by 2. Then, either add/subtract that from \(A\) to get the max/min.
+	\( C \) points form a circle around \(A\), radius 2. You need to find the unit vector of \(A\), then scale it by 2. Then, either add/subtract that from \(A\) to get the max/min.
 
-\begin{align*}
-	|OA| &= \sqrt{1^2 + 2^2} = \sqrt{5} \\
-	OA_\text{Unit} &= \frac{OA}{\sqrt{5}} \\
-	&= \frac{1}{\sqrt{5}}i - \frac{2}{\sqrt{5}}j \\
-	&= \frac{\sqrt{5}}{5}i - \frac{2\sqrt{5}}{5}j \\
-	|AC| &= \frac{2\sqrt{5}}{5}i - \frac{4\sqrt{5}}{5}j \\ \\
-	\text{Max} &= i - 2j + \frac{2\sqrt{5}}{5}i - \frac{4\sqrt{5}}{5}j \\
-	\text{Min} &= i - 2j - \frac{2\sqrt{5}}{5}i + \frac{4\sqrt{5}}{5}j
-\end{align*}
+	\begin{align*}
+		|OA| &= \sqrt{1^2 + 2^2} = \sqrt{5} \\
+		OA_\text{Unit} &= \frac{OA}{\sqrt{5}} \\
+		&= \frac{1}{\sqrt{5}}i - \frac{2}{\sqrt{5}}j \\
+		&= \frac{\sqrt{5}}{5}i - \frac{2\sqrt{5}}{5}j \\
+		|AC| &= \frac{2\sqrt{5}}{5}i - \frac{4\sqrt{5}}{5}j \\ \\
+		\text{Max} &= i - 2j + \frac{2\sqrt{5}}{5}i - \frac{4\sqrt{5}}{5}j \\
+		\text{Min} &= i - 2j - \frac{2\sqrt{5}}{5}i + \frac{4\sqrt{5}}{5}j
+	\end{align*}
 }
 }
+
+\qs{
+\qsp{i}{
+	\vspace{6cm}
+}
+\qsp{ii}{
+	\begin{align*}
+		|r| &= \sqrt{4^2 + (-5)^2} \\
+		&= 6.40 \\
+		\theta &= \arctan \frac{-5}{4} \\
+		&= -51.3 \dg
+	\end{align*}
+}
+\qsp{iii}{
+	\[ = \coord{12}{-15} \]
+}
+}
+
+\qs{
+\qsp{i}{
+	\begin{align*}
+		|p| &= \sqrt{8^2 + 1^2} = \sqrt{65} \\
+		|q| &= \sqrt{4^2 + (-7)^2} = \sqrt{65}
+	\end{align*}
+}
+\qsp{ii}{
+	\begin{align*}
+		p + q &= 8i + j + 4i - 7j \\
+		&= 12i - 6j \\
+		\theta_{p + q} &= \arctan \frac{-6}{12} = \arctan -\frac{1}{2} \\
+		\theta_{2i - j} &= \arctan \frac{-1}{2} = \arctan -\frac{1}{2} 
+	\end{align*}
+	Angles are the same \( \therefore \) they are parallel.
+}
+\qsp{iii}{
+\vspace{8cm}
+}
+}
+
 
 \end{document}
