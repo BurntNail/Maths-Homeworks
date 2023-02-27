@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 
@@ -16,10 +16,164 @@
 \maketitle
 
 \qs{
+\begin{multicols}{2}
+	\noindent
+	\qsp{a}{
+	\begin{align*}
+		v^2 &= u^2 + 2as \\
+		0 &= \left( 25 \sin 35 \right)^2 - 2 * 9.8 * s \\
+		s &= \frac{14.3^2}{19.6} \\
+		&= \qty{10.5}{m}
+	\end{align*}
+	}
+
+	\columnbreak
+	\qsp{b}{
+		\begin{align*}
+			s &= ut + at^2 \\
+			0 &= 25t \sin 35 - 9.8 t^2 \\
+			t &= 0, 2.551 \\
+			\\
+			s &= ut - \frac{at^2}{2} \\
+			&= 25 * 2.551 * \cos 35 - 0 \\
+			&= \qty{52.2}{m}
+		\end{align*}
+	}
+\end{multicols}
+}
+
+\qs{
+\begin{align*}
+	s &= ut - \frac{at^2}{2} \\
+	-28 &= 0 - 4.9 t^2 \\
+	t &= \sqrt{\frac{28}{4.9}} \\
+	&= 2.39 \ldots \\
+	\\
+	s &= ut - \frac{at^2}{2} \\
+	45 &= 2.39 u - 0 \\
+	u &= \frac{45}{2.39} \\
+	&= \qty{18.8}{m.s^{-1}}
+\end{align*}
+}
+
+\qs{
 \qsp{a}{
-
+\begin{multicols}{2}
+	\noindent
+	\begin{align*}
+		\func[R]{x} \\
+		s &= ut - \frac{at^2}{2} \\
+		&= 15 * 0.6 t  - 0 \\
+		&= 9t \\
+		x &= 9t
+	\end{align*}
+	
+	\columnbreak
+	\begin{align*}
+		\func[R]{y} \\
+		s &= ut - \frac{at^2}{2} \\
+		&= 15 * 0.8 t - \frac{10 * t^2}{2} \\
+		&= 12t - 5t^2 \\
+		y &= 12t - 5t^2 
+	\end{align*}
+\end{multicols}
+}
+\qsp{b}{
+\begin{align*}
+	x &= 9t \\
+	t &= \frac{x}{9} \\
+	\\
+	y &= 12t - 5t^2 \\
+	y &= 12 \frac{x}{9} - 5 \frac{x}{9}^2 \\
+	y &= \frac{4}{3}x - \frac{5}{81}x^2
+\end{align*}
+}
+\qsp{c}{
+\begin{align*}
+	0 &= \frac{4}{3}x - \frac{5}{81}x^2 \\
+	x &= 0, 21.6 \\
+	x &= \qty{21.6}{m}
+\end{align*}
 }
 }
 
+\qs{
+\qsp{a}{
+\begin{itemize}
+	\ii No air resistance (no horizontal acceleration)
+	\ii No external factors (eg. child hitting the ball midway through)
+	\ii Constant gravity value, irregardless of location or height
+\end{itemize}
+}
+\qsp{b}{
+\begin{multicols}{2}
+	\noindent
+	\begin{align*}
+		\func[R]{x} \\
+		s &= ut - \frac{at^2}{2} \\
+		&= 30 * \cos 40 t  - 0 \\
+		&= 23.0t \\
+		x &= 23.0t
+	\end{align*}
+	
+	\columnbreak
+	\begin{align*}
+		\func[R]{y} \\
+		s &= ut - \frac{at^2}{2} \\
+		&= 30 * \sin 40 t - \frac{9.8 * t^2}{2} \\
+		&= 19.3t - 4.9t^2 \\
+		y &= 19.3 - 4.9t^2 
+	\end{align*}
+\end{multicols}
+}
+\qsp{c}{
+\begin{align*}
+	s &= ut - \frac{at^2}{2} \\
+	34 &= 23.0t - 0 \\
+	t &= \frac{34}{23.0} \\
+	&= \qty{1.48}{s} \\
+\end{align*}
+}
+\qsp{d}{
+\begin{align*}
+	\frac{dy}{dt} &= 12 - 10t \\
+	v_y &= 19.3 - 9.8t \\
+	    &= 19.3 - 9.8*1.48 \\
+	    &= \qty{4.78}{ms^{-1}} \\
+	v &= \sqrt{23^2 + 4.78^2} \\
+	  &= \qty{23.5}{ms^{-1}} \\
+	\\
+	\tan \theta &= \frac{O}{A} \\
+	\theta &= \arctan \frac{4.78}{23.0} \\
+	       &= \ang{11.8}
+\end{align*}
+The ball is still rising at \(\qty{23.5}{ms^{-1}}\) at an angle of \(\ang{11.8}\) from the horizontal.
+}
+}
+
+\qs{
+\qsp{a}{
+\begin{align*}
+	v^2 &= u^2 + 2as \\
+	0^2 &= \left( u \sin \alpha \right)^2 - 2*0.3*g \\
+	???
+\end{align*}
+\vspace{2cm}
+}
+\qsp{b}{
+???
+\vspace{3cm}
+}
+\qsp{c}{
+Yes - it is only 12m away.
+}
+\qsp{d}{
+\begin{itemize}
+	\ii Doesn't account for squashing/stretching of ball in air.
+	\ii Doesn't account for air resistance
+	\ii Doesn't account for weather.
+\end{itemize}
+}
+}
 
 \end{document}
