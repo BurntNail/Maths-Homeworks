@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\input{../preamble}
+\input{../macros}
+
+\graphicspath{{./images/}}
+
+\title{\huge{Binomial Hypothesis Testing}}
+\author{\huge{Jack Maguire}}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\qs{
+\qsp{i}{
+\[x \sim \func[B]{20, 0.78} \]
+\begin{itemize}
+	\ii A: \(\func[P]{x = 19} = 3.91\% \)
+	\ii B: \(\func[P]{x \leq 18} = 95.38\% \)
+	\ii C: ???
+\end{itemize}
+}
+\qsp{ii}{
+Let \(p\) be the proportion of patients who are cured.
+\begin{itemize}
+	\ii \( H_0: p = 0.78 \)
+	\ii \( H_1: p > 0.78 \)
+\end{itemize}
+Let \(x\) be the number of patients cured out of 20.
+Under \(H_0\), \(x \sim \func[B]{20, 0.78}\)
+\[ p = \func[P]{x \geq 19} = 0.0461 \]
+\( 0.0461 > 0.01 \therefore \) there is insufficient evidence to reject \(H_0\) in favour of \(H_1\). This is sufficient evidence that the new treatment is no different to the old one.
+}
+\qsp{ii}{
+\( 0.0461 < 0.05 \therefore \) there is sufficient evidence to reject \(H_0\) in favour of \(H_1\). This is sufficient evidence that the new treatment is better than the old one.
+}
+}
+
+\qs{
+\qsp{i}{
+\[ x \sim \func[B]{15, 0.85} \]
+\begin{itemize}
+	\ii A: \( \func[P]{x = 12} = 21.84\% \)
+	\ii B: \( \func[P]{x \leq 11} = 17.73\%  \)
+\end{itemize}
+}
+\qsp{ii}{
+Let \(p\) be the proportion of seeds that germinate out of 15.
+\begin{itemize}
+	\ii \(H_0: p = 0.85 \)
+	\ii \(H_1: p < 0.85 \)
+\end{itemize}
+The alternate hypothesis uses <, as we are checking if fewer seeds germinated than before as our hypothesis.
+}
+\qsp{iii}{
+Let \(x\) be the number of seeds that germinate out of 20.
+Under \(H_0\), \(x \sim \func[B]{20, 0.85}\)
+\[ p = \func[P]{x \leq 13} = 0.0219\]
+\( 0.0219 > 0.01 \therefore\) there is insufficient evidence to reject \(H_0\) in favour of \(H_1\). This is sufficient evidence that the old seeds show no change in germination rate.
+}
+}
+
+\qs{
+\qsp{i}{
+\[ x \sim \func[B]{10, 0.35} \]
+\begin{itemize}
+	\ii A: \( \func[P]{x = 5} = 15.35\% \)
+	\ii B: \( \func[P]{x \geq 5} = 24.85\% \)
+	\ii C: ???
+\end{itemize}
+}
+\qsp{ii}{
+Let \(p\) be the proportion of the customers who use the internet.
+\begin{itemize}
+	\ii \(H_0: p = 0.35 \)
+	\ii \(H_1: p \neq 0.35\)
+\end{itemize}
+Let \(x\) be the customers who use the internet out of 20.
+Under \(H_0\), \(x \sim \func[B]{10, 0.35}\)
+\[ p = \func[P]{x \geq 10} = 0.1217 \]
+\( 0.1217 < \frac{0.5}{2} \therefore \) there is insufficient evidence to reject \(H_0\) in favour of \(H_1\). This is sufficient evidence that the proportion of internet users hasn't changed. 
+}
+}
+
+\end{document}
